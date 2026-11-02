@@ -8,7 +8,7 @@
 <meta name="description" content="Bambusboxere som blir liggende på låret. Farsdagstilbud: kjøp 5 stk og få en ekstra boxer på kjøpet. Fri frakt over 599 kr.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23121212'/><text x='50%25' y='74' text-anchor='middle' font-size='68' font-family='Georgia,serif' font-style='italic' fill='%23CAE0C7'>t</text></svg>">
 <!-- ============================================================
-     TRIATHLON WEAR · FARSDAG v3 = produktside v4 + farsdag (kjøp 5, få 6) · 02.11.2026
+     TRIATHLON WEAR · FARSDAG v4 = seksjonene fra triathlonwear.no-produktsiden + farsdag i hero · 02.11.2026
      v4 = v3 slanket (Victor 29.10: «litt mye som skjer»): uten fremhevet anmeldelse, bambus mot bomull, fordelskort; trust på én linje; 3 anmeldelser + vis flere.
      v3 = v2 + videorad «Se dem i bruk», video i galleriet, fremhevet
      anmeldelse i kjøpsboksen, stjernefordeling og kundebilder (Judge.me).
@@ -185,6 +185,31 @@ h1,h2,h3{font-family:var(--h);font-weight:400;color:var(--ink);letter-spacing:.6
 .gave .row{display:flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;font-size:15px;color:var(--ink)}
 .gave .x{flex:none;width:26px;height:26px;border-radius:50%;background:#FBE5E3;color:#C0392B;display:grid;place-items:center;font-size:13px;font-weight:700}
 .gave .ok{background:#E4EFE2;color:#2E6B2A}
+.badge2{position:absolute;top:20px;right:20px;background:var(--ink);color:#fff;border-radius:40px;padding:7px 13px;font-size:12px;font-weight:700;letter-spacing:.6px;z-index:2}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:1170px;margin:34px auto 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px}
+.card h3{font-family:var(--h);font-size:19px;letter-spacing:.3px;color:var(--ink);margin:12px 0 4px;font-weight:400}
+.card p{font-size:14px;color:var(--text);line-height:1.45}
+.ico{width:44px;height:44px;border-radius:12px;background:#E0E0E0;display:grid;place-items:center;color:var(--ink)}
+.ico svg{width:20px;height:20px}
+.cmp{max-width:1070px;margin:34px auto 0}
+.cmp .hd,.cmp .rw{display:grid;grid-template-columns:minmax(0,1fr) 110px 110px;align-items:center;gap:8px}
+.cmp .hd{font-size:13px;font-weight:700;color:var(--muted);padding:0 16px 8px}
+.cmp .hd span:not(:first-child),.cmp .rw span:not(:first-child){text-align:center;display:grid;place-items:center}
+.cmp .rw{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:12px 16px;margin-top:10px;font-size:15px;color:var(--ink)}
+.cmp .y,.cmp .n{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:16px;font-weight:700}
+.cmp .y{background:#DCEBDA;color:#2E6B2A}.cmp .n{background:#F3DADA;color:#C0392B}
+.cmp .v{font-size:12px;color:var(--muted)}
+.fit{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:start}
+.fit .lst{display:grid;gap:10px;margin-top:20px}
+.fit .it{display:flex;gap:12px;background:var(--card);border-radius:var(--r);padding:14px}
+.fit .it .ico{width:36px;height:36px;flex:none}
+.fit .it b{display:block;color:var(--ink);font-size:15px}
+.fit .it span{font-size:14px;color:var(--text)}
+.guide2{background:var(--white);border:1px solid var(--line);border-radius:var(--r-lg);padding:16px;margin-top:10px}
+.guide2 b{color:var(--ink)}
+.guide2 p{font-size:13px;color:var(--text)}
+@media(max-width:760px){.cards{grid-template-columns:1fr}.fit{grid-template-columns:1fr}.cmp .hd,.cmp .rw{grid-template-columns:minmax(0,1fr) 64px 64px}.cmp .rw{font-size:14px;padding:10px 12px}.cmp .hd{padding:0 12px 6px;font-size:12px}}
 .trust1{margin-top:10px;font-size:12.5px;color:var(--text);line-height:1.5;text-align:center}
 .trust{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
 .trust span{display:inline-flex;align-items:center;gap:8px;background:var(--white);border-radius:40px;padding:5px 10px;font-size:12px;color:var(--ink);box-shadow:0 2px 10px rgba(0,0,0,.06)}
@@ -393,7 +418,7 @@ h1,h2,h3{font-family:var(--h);font-weight:400;color:var(--ink);letter-spacing:.6
     <!-- GALLERI -->
     <div class="media">
       <div class="stage">
-        <span class="instock">På lager</span>
+        <span class="instock">På lager</span><span class="badge2">Farsdag: kjøp 5, få 6</span>
         <div class="slides" id="slides"></div>
       </div>
       <div class="thumbs" id="thumbs"></div>
@@ -402,7 +427,7 @@ h1,h2,h3{font-family:var(--h);font-weight:400;color:var(--ink);letter-spacing:.6
     <!-- KJØPSBOKS -->
     <div class="info" id="info">
       <p class="eyebrow">Farsdagsgaven · Triathlon boxershorts</p>
-      <h1>Bambus boxershorts</h1>
+      <h1>Bambus boxershorts til farsdag</h1>
       <a class="rating" href="#anmeldelser"><span class="stars">★★★★★</span><b>4,7 / 5</b><span>(821 anmeldelser)</span></a>
       <div class="price"><span class="now" id="pNow">549 kr</span><span class="per" id="pPer">110 kr per boxer</span></div>
       <p class="tax">Inkludert avgifter.</p>
@@ -441,7 +466,8 @@ h1,h2,h3{font-family:var(--h);font-weight:400;color:var(--ink);letter-spacing:.6
         </button>
               </div>
 
-      <p class="trust1">Fri frakt over 599&nbsp;kr · Levering 2 til 4 virkedager · 14 dagers angrerett · Klarna og Vipps</p>
+      <div class="trust"><span>Fri frakt over 599&nbsp;kr</span><span>Levering 2 til 4 virkedager</span><span>14 dagers angrerett</span></div>
+      <div class="pay"><img src="img/betaling.png" alt="Visa, Mastercard, Vipps og Klarna" height="34"></div>
 
       <!-- SE DEM I BRUK (v3): ekte videoer fra Triathlons egen annonsekonto, se fakta.md -->
       <div class="inuse">
@@ -465,46 +491,57 @@ h1,h2,h3{font-family:var(--h);font-weight:400;color:var(--ink);letter-spacing:.6
   </div>
 </section>
 
-<!-- VERDI (som QualiPet-verdistabelen: bytter med valgt boks) -->
-<section class="sec vsec" style="padding-top:8px;padding-bottom:8px">
+<!-- HVORFOR BAMBUS (som triathlonwear.no) -->
+<section class="sec" style="padding-top:56px">
   <div class="wrap">
-    <div class="verdi">
-      <p class="vt" id="vTitle">Dette får du i boksen Medium</p>
-      <div class="vr"><span id="vAnt">5 bambusboxere à 199&nbsp;kr</span><span id="vFull">995&nbsp;kr</span></div>
-      <div class="vr vgratis" id="vEkstra"><span>1 ekstra boxer, farsdagstilbud</span><span>Gratis</span></div>
-      <div class="vr" id="vFrakt"><span>Frakt i postkassen</span><span>0&nbsp;kr</span></div>
-      <div class="vr vsum"><span>Du betaler</span><span id="vPris">549&nbsp;kr</span></div>
-      <div class="vr vspar"><span>Du sparer</span><span id="vSpar">446&nbsp;kr (45&nbsp;%)</span></div>
+    <div class="center"><span class="chip">Hvorfor bambus?</span><h2>Designet for komfort hele dagen</h2><p class="sub">Det kundene merker første gang de tar dem på.</p></div>
+    <div class="cards">
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15c3-6 13-6 16 0"/><path d="M4 15c3 3 13 3 16 0"/></svg></span><h3>Myk mot huden</h3><p>93&nbsp;% viskose fra bambus. Mykheten er det kundene skriver mest om.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h11a3 3 0 1 0-3-3"/><path d="M3 12h15a3 3 0 1 1-3 3"/><path d="M3 16h7"/></svg></span><h3>Puster godt</h3><p>Lett og myk viskose som kjennes behagelig hele dagen.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M8 17l4 4 4-4"/></svg></span><h3>Kryper ikke opp</h3><p>Lange ben som blir liggende på låret, også når han setter seg i bilen.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M8 8l-4 4 4 4"/><path d="M16 8l4 4-4 4"/></svg></span><h3>Litt stretch</h3><p>7&nbsp;% elastan gjør at boxeren følger med når han beveger seg.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span><h3>Flate sømmer</h3><p>Ingen skjøter som gnager på lange dager.</p></div>
+      <div class="card"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l1 18H5z"/><circle cx="12" cy="13" r="4"/></svg></span><h3>Vask på 40 grader</h3><p>Kan vaskes sammen med resten av klærne hans.</p></div>
     </div>
   </div>
 </section>
 
-<!-- FARSDAG -->
-<section class="sec" style="padding-top:28px;padding-bottom:8px">
+<!-- HVORFOR TRIATHLON (farsdag-vri på sammenligningen) -->
+<section class="sec" style="padding-top:0">
   <div class="wrap">
-    <div class="gave">
-      <span class="chip">Til farsdag</span>
-      <h2>Gaven han faktisk bruker</h2>
-      <div class="rows">
-        <div class="row"><span class="x">&#10005;</span>Enda et slips eller en flaske han ikke ba om</div>
-        <div class="row"><span class="x">&#10005;</span>Boxere som ruller seg opp i lysken etter en time</div>
-        <div class="row"><span class="x ok">&#10003;</span>Seks myke boxere han bruker hver dag</div>
-      </div>
+    <div class="center"><span class="chip">Til farsdag</span><h2>Hvorfor boxere til farsdag?</h2><p class="sub">Gaven han faktisk bruker, mot den som havner i skapet.</p></div>
+    <div class="cmp">
+      <div class="hd"><span>Egenskap</span><span>Triathlon</span><span>Enda et slips</span></div>
+      <div class="rw"><span>Brukes hver dag</span><span><i class="y">&#10003;</i></span><span><i class="n">&#10005;</i></span></div>
+      <div class="rw"><span>Myk mot huden</span><span><i class="y">&#10003;</i></span><span class="v">Varierer</span></div>
+      <div class="rw"><span>Han har aldri for mange</span><span><i class="y">&#10003;</i></span><span><i class="n">&#10005;</i></span></div>
+      <div class="rw"><span>Kommer i postkassen</span><span><i class="y">&#10003;</i></span><span class="v">Varierer</span></div>
+      <div class="rw"><span>6 stk for 549&nbsp;kr</span><span><i class="y">&#10003;</i></span><span><i class="n">&#10005;</i></span></div>
     </div>
   </div>
 </section>
 
-<!-- HVORFOR -->
-<section class="sec" style="padding-top:20px">
+<!-- PASSFORM (som triathlonwear.no) -->
+<section class="sec" style="padding-top:0">
   <div class="wrap">
-    <div class="why">
-      <div class="why-img"><img src="img/lengde.jpg" alt="Sort Triathlon boxer sett fra siden, beina går langt ned på låret" loading="lazy"></div>
-      <div class="why-txt">
-        <span class="chip">Passform</span>
-        <h2>Kryper ikke opp i skrittet</h2>
-        <p class="sub" style="margin:0">Lange ben som blir liggende på låret. Det er det mange av kundene våre skriver om.</p>
+    <div class="fit">
+      <div>
+        <h2 style="margin-top:0">Sitter på plass hele dagen</h2>
+        <p class="sub" style="margin:0">Ingen rulling opp på låret og ingen klump i lysken.</p>
         <p class="quote">«Topp soft følelse og holder seg den skal,ikke oppe i skrittet»<small>Per I., verifisert kjøper</small></p>
+        <div class="lst">
+          <div class="it"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M8 17l4 4 4-4"/></svg></span><div><b>Lange ben</b><span>Beina går langt ned på låret og blir liggende der.</span></div></div>
+          <div class="it"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16"/><path d="M8 8l-4 4 4 4"/><path d="M16 8l4 4-4 4"/></svg></span><div><b>Elastisk og fleksibel</b><span>7&nbsp;% elastan gir stretch som følger kroppen.</span></div></div>
+          <div class="it"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l1 18H5z"/><circle cx="12" cy="13" r="4"/></svg></span><div><b>Tåler vask</b><span>Vask på 40 grader.</span></div></div>
+        </div>
+        <div class="guide2">
+          <b>Størrelsesguide</b>
+          <p style="margin-top:4px">Mål rundt midjen der buksen sitter.</p>
+          <table class="stab"><tr><th>Str.</th><th>S</th><th>M</th><th>L</th><th>XL</th><th>XXL</th></tr><tr><th>Midje</th><td>76 til 81</td><td>81 til 86</td><td>86 til 91</td><td>91 til 96</td><td>96 til 101</td></tr></table>
+          <p>Alle mål i cm. Ligger han mellom to størrelser, ta den største. Lappen i en boxer han bruker i dag er et godt hint.</p>
+        </div>
       </div>
+      <div class="why-img"><img src="img/lengde.jpg" alt="Sort Triathlon boxer sett fra siden, beina går langt ned på låret" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -757,6 +794,7 @@ function bygKjop(){
   $('stTot').textContent=kr(t);
 }
 function bygVerdi(){
+  if(!$('vTitle'))return;
   var n=+valg.pk, pr=D[valg.pk][valg.f].p, full=n*199;
   $('vTitle').textContent='Dette får du i boksen '+BOKS[valg.pk];
   $('vAnt').innerHTML=n+' bambusboxere à 199&nbsp;kr';
