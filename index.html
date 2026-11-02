@@ -469,7 +469,7 @@ h1,h2,h3{font-family:var(--h);font-weight:400;color:var(--ink);letter-spacing:.6
 <section class="sec vsec" style="padding-top:8px;padding-bottom:8px">
   <div class="wrap">
     <div class="verdi">
-      <p class="vt" id="vTitle">Dette får du i Medium-boksen</p>
+      <p class="vt" id="vTitle">Dette får du i boksen Medium</p>
       <div class="vr"><span id="vAnt">5 bambusboxere à 199&nbsp;kr</span><span id="vFull">995&nbsp;kr</span></div>
       <div class="vr vgratis" id="vEkstra"><span>1 ekstra boxer, farsdagstilbud</span><span>Gratis</span></div>
       <div class="vr" id="vFrakt"><span>Frakt i postkassen</span><span>0&nbsp;kr</span></div>
@@ -758,7 +758,7 @@ function bygKjop(){
 }
 function bygVerdi(){
   var n=+valg.pk, pr=D[valg.pk][valg.f].p, full=n*199;
-  $('vTitle').textContent='Dette får du i '+BOKS[valg.pk]+'-boksen';
+  $('vTitle').textContent='Dette får du i boksen '+BOKS[valg.pk];
   $('vAnt').innerHTML=n+' bambusboxere à 199&nbsp;kr';
   $('vFull').textContent=kr(full);
   $('vFrakt').style.display=pr>=FRI?'':'none';
